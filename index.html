@@ -3,73 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fancy HTML Page</title>
+    <title>Magesh Sankaran - Software Engineer</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            color: #333;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 1em;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        header {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: white;
-            padding: 4em 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 3em;
             margin: 0;
+            padding: 20px;
         }
-        header p {
-            font-size: 1.2em;
-            margin-top: 0.5em;
-        }
-        .content {
-            padding: 2em;
+        .container {
             max-width: 800px;
-            margin: 2em auto;
-            background-color: white;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .content h2 {
-            font-size: 2em;
-            margin-top: 0;
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
-        .content p {
-            line-height: 1.6;
+        .profile-header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            margin: 10px 0;
+        }
+        .tech-stack {
+            margin-top: 20px;
+        }
+        .tech-stack ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tech-stack ul li {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .certification {
+            margin-top: 20px;
+        }
+        .education {
+            margin-top: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-    <header>
-        <h1>Welcome to My Fancy Page</h1>
-        <p>Crafting beautiful web experiences with style.</p>
-    </header>
-    <div class="content">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum eros at velit feugiat, non convallis ligula ullamcorper. Curabitur ac sapien at eros volutpat ultrices.</p>
-        <p>Suspendisse potenti. Morbi dignissim nec nisi eu posuere. Donec vel augue vel nunc fermentum scelerisque. Duis venenatis ligula nec est tempor, a consectetur nulla fermentum.</p>
+    <div class="container">
+        <div class="profile-header">
+            <div>
+                <h1>Magesh Sankaran</h1>
+                <p>With over 9 years of experience in software engineering, I bring a strong focus on back-end technologies and cloud solutions, particularly Java and AWS Cloud. My full-stack development expertise allows me to architect and implement robust solutions that drive innovation and efficiency.</p>
+                <p><strong>Engineering Manager</strong></p>
+                <p><strong>Cognizant Technology Solutions</strong> (Mar 2019 - Present)</p>
+                <ul>
+                    <li>Led a 6-member team at JP Morgan Chase's commercial banking unit, fostering collaboration and efficiency.</li>
+                    <li>Spearheaded the migration of applications from on-premises infrastructure to AWS Cloud, optimizing performance and scalability.</li>
+                    <li>Implemented cost optimization strategies by right-sizing databases, improving resource allocation.</li>
+                    <li>Strengthened system monitoring tools by implementing effective alerts and creating intuitive dashboards.</li>
+                    <li>Actively participated in continuous learning initiatives to stay ahead of the curve in cloud computing advancements.</li>
+                    <li>Provided technical guidance and support to team members, ensuring project milestones were achieved efficiently.</li>
+                </ul>
+                <p><strong>Bank Of New York Mellon Corp</strong></p>
+                <ul>
+                    <li>Member of an 8-person development team in the BNYMellon Asset Management Domain, contributing expertise and collaboration.</li>
+                    <li>Implemented a new feature that went live with minimal bugs, showcasing meticulous attention to detail.</li>
+                    <li>Automated certificate deployment using an in-house tool, streamlining processes and ensuring reliability.</li>
+                    <li>Played a key role in transitioning the application build tool from Jenkins to Gitlab CI/CD.</li>
+                    <li>Collaborated closely with cross-functional teams to ensure smooth integration and functionality throughout the transition period.</li>
+                    <li>Actively participated in team discussions and decision-making processes, fostering continuous improvement and innovation.</li>
+                </ul>
+                <p><strong>Consultant</strong></p>
+                <p><strong>Intellect Design Arena Limited</strong> - Chennai, India (Jul 2016 - Feb 2019)</p>
+                <ul>
+                    <li>Understand business needs, recommend solutions, and design secure cloud applications.</li>
+                    <li>Develop microservices using Spring Boot, Spring Framework, Java, RESTful APIs, and Kafka.</li>
+                    <li>Write test cases, perform unit, functional, system, and integration testing, and ensure high-quality code.</li>
+                    <li>Utilize DevOps tools for code management, build automation, code quality analysis, and vulnerability scanning. Automate tasks for efficiency.</li>
+                </ul>
+                <p><strong>Software Engineer</strong></p>
+                <p><strong>eG Innovations Pvt Ltd</strong> - Chennai, India (Nov 2014 - Jul 2016)</p>
+                <ul>
+                    <li>Develop applications using java technologies and deploy them to prod environments.</li>
+                    <li>Analyze business needs for change requests and enhancements, Identify and analyze</li>
+                    <li>Define the system using flowcharts and UML diagrams.</li>
+                </ul>
+                <p>Chicago, Illinois - 60631</p>
+                <p>(773) 414-0464</p>
+                <p>mageshsankaran128@gmail.com</p>
+                <p><a href="https://www.linkedin.com/in/magesh-sankaran">LinkedIn Profile</a></p>
+                <div class="tech-stack">
+                    <h2>TECH STACK</h2>
+                    <ul>
+                        <li>Java 8</li>
+                        <li>Spring Boot</li>
+                        <li>Rest API</li>
+                        <li>Microservices</li>
+                        <li>Kafka, MQ</li>
+                        <li>Docker, Kubernetes, AWS EKS, Gaia Cloud</li>
+                        <li>Terraform</li>
+                        <li>Oracle DB, MongoDB, PostgreSQL, AWS RDS</li>
+                        <li>JUnit, Jenkin, Jules, BitBucket, GitLab, CI/CD</li>
+                        <li>SonarQube, Splunk, Spinnaker, Dynatrace, JIRA</li>
+                    </ul>
+                </div>
+                <div class="certification">
+                    <h2>CERTIFICATION</h2>
+                    <p>Certified in XYZ Technology - 2020</p>
+                </div>
+                <div class="education">
+                    <h2>EDUCATION</h2>
+                    <p><strong>Bachelor’s in Computer Science & Engineering</strong></p>
+                    <p><strong>Anna University</strong> - Chennai, India</p>
+                    <p>JULY 2008 - MAY 2012</p>
+                </div>
+            </div>
+            <img class="profile-photo" src="profile-photo.jpg" alt="Profile Photo">
+        </div>
     </div>
 </body>
 </html>
