@@ -3,84 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magesh Sankaran - Software Engineer</title>
+    <title>Magesh Sankaran - Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: 0 auto;
-            background-color: #fff;
+            background: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .profile-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        header {
+            text-align: center;
             margin-bottom: 20px;
         }
-        .profile-header h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #444;
         }
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        header p {
+            margin: 5px 0;
+            color: #777;
         }
-        .profile-details {
-            flex: 1;
-            margin-left: 20px;
-        }
-        .experience-item {
+        section {
             margin-bottom: 20px;
         }
-        .experience-item h3 {
-            margin: 10px 0;
-        }
-        .tech-stack {
-            margin-top: 20px;
-        }
-        .tech-stack ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .tech-stack ul li {
-            margin-right: 10px;
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
             margin-bottom: 10px;
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            border-radius: 5px;
+            font-size: 1.5em;
         }
-        .certification {
-            margin-top: 20px;
+        ul {
+            list-style: none;
+            padding: 0;
         }
-        .education {
-            margin-top: 20px;
+        ul li {
+            padding: 5px 0;
         }
         .contact-info {
-            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .experience, .education, .certifications, .tech-stack {
+            margin-bottom: 20px;
+        }
+        .experience h3, .education h3, .certifications h3, .tech-stack h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .experience p, .education p, .certifications p, .tech-stack p {
+            margin: 5px 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile-header">
+        <header>
+            <h1>Magesh Sankaran</h1>
+            <p>With over 9 years of experience in software engineering, I bring a strong focus on back-end technologies and cloud solutions, particularly Java and AWS Cloud. My full-stack development expertise allows me to architect and implement robust solutions that drive innovation and efficiency.</p>
+            <div class="contact-info">
+                <p>Chicago, Illinois - 60631</p>
+                <p>(773) 414-0464</p>
+                <p><a href="mailto:mageshsankaran128@gmail.com">mageshsankaran128@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/magesh-sankaran" target="_blank">LinkedIn</a></p>
+            </div>
+        </header>
+
+        <section class="experience">
+            <h2>Experience</h2>
             <div>
-                <h1>Magesh Sankaran</h1>
-                <p>With over 9 years of experience in software engineering, I bring a strong focus on back-end technologies and cloud solutions, particularly Java and AWS Cloud. My full-stack development expertise allows me to architect and implement robust solutions that drive innovation and efficiency.</p>
-                <p><strong>Engineering Manager</strong></p>
-                <p><strong>Cognizant Technology Solutions</strong> (Mar 2019 - Present)</p>
+                <h3>Engineering Manager</h3>
+                <p>Cognizant Technology Solutions (Mar 2019 - Present)</p>
+                <p>JP Morgan Chase - Chicago, IL</p>
                 <ul>
                     <li>Led a 6-member team at JP Morgan Chase's commercial banking unit, fostering collaboration and efficiency.</li>
                     <li>Spearheaded the migration of applications from on-premises infrastructure to AWS Cloud, optimizing performance and scalability.</li>
@@ -89,62 +98,58 @@
                     <li>Actively participated in continuous learning initiatives to stay ahead of the curve in cloud computing advancements.</li>
                     <li>Provided technical guidance and support to team members, ensuring project milestones were achieved efficiently.</li>
                 </ul>
-                <p><strong>Bank Of New York Mellon Corp</strong></p>
+            </div>
+            <div>
+                <h3>Bank Of New York Mellon Corp</h3>
+                <p>Member of an 8-person development team in the BNYMellon Asset Management Domain, contributing expertise and collaboration.</p>
                 <ul>
-                    <li>Member of an 8-person development team in the BNYMellon Asset Management Domain, contributing expertise and collaboration.</li>
                     <li>Implemented a new feature that went live with minimal bugs, showcasing meticulous attention to detail.</li>
                     <li>Automated certificate deployment using an in-house tool, streamlining processes and ensuring reliability.</li>
                     <li>Played a key role in transitioning the application build tool from Jenkins to Gitlab CI/CD.</li>
                     <li>Collaborated closely with cross-functional teams to ensure smooth integration and functionality throughout the transition period.</li>
                     <li>Actively participated in team discussions and decision-making processes, fostering continuous improvement and innovation.</li>
                 </ul>
-                <p><strong>Consultant</strong></p>
-                <p><strong>Intellect Design Arena Limited</strong> - Chennai, India (Jul 2016 - Feb 2019)</p>
+            </div>
+            <div>
+                <h3>Consultant</h3>
+                <p>Intellect Design Arena Limited - Chennai, India (Jul 2016 - Feb 2019)</p>
                 <ul>
                     <li>Understand business needs, recommend solutions, and design secure cloud applications.</li>
                     <li>Develop microservices using Spring Boot, Spring Framework, Java, RESTful APIs, and Kafka.</li>
                     <li>Write test cases, perform unit, functional, system, and integration testing, and ensure high-quality code.</li>
                     <li>Utilize DevOps tools for code management, build automation, code quality analysis, and vulnerability scanning. Automate tasks for efficiency.</li>
                 </ul>
-                <p><strong>Software Engineer</strong></p>
-                <p><strong>eG Innovations Pvt Ltd</strong> - Chennai, India (Nov 2014 - Jul 2016)</p>
+            </div>
+            <div>
+                <h3>Software Engineer</h3>
+                <p>eG Innovations Pvt Ltd - Chennai, India (Nov 2014 - Jul 2016)</p>
                 <ul>
                     <li>Develop applications using java technologies and deploy them to prod environments.</li>
-                    <li>Analyze business needs for change requests and enhancements, Identify and analyze</li>
+                    <li>Analyze business needs for change requests and enhancements, Identify and analyze potential roadblocks and challenges.</li>
+                    <li>Create system design specifications and analyze business impacts.</li>
                     <li>Define the system using flowcharts and UML diagrams.</li>
                 </ul>
-                <p>Chicago, Illinois - 60631</p>
-                <p>(773) 414-0464</p>
-                <p>mageshsankaran128@gmail.com</p>
-                <p><a href="https://www.linkedin.com/in/magesh-sankaran">LinkedIn Profile</a></p>
-                <div class="tech-stack">
-                    <h2>TECH STACK</h2>
-                    <ul>
-                        <li>Java 8</li>
-                        <li>Spring Boot</li>
-                        <li>Rest API</li>
-                        <li>Microservices</li>
-                        <li>Kafka, MQ</li>
-                        <li>Docker, Kubernetes, AWS EKS, Gaia Cloud</li>
-                        <li>Terraform</li>
-                        <li>Oracle DB, MongoDB, PostgreSQL, AWS RDS</li>
-                        <li>JUnit, Jenkin, Jules, BitBucket, GitLab, CI/CD</li>
-                        <li>SonarQube, Splunk, Spinnaker, Dynatrace, JIRA</li>
-                    </ul>
-                </div>
-                <div class="certification">
-                    <h2>CERTIFICATION</h2>
-                    <p>Certified in XYZ Technology - 2020</p>
-                </div>
-                <div class="education">
-                    <h2>EDUCATION</h2>
-                    <p><strong>Bachelor’s in Computer Science & Engineering</strong></p>
-                    <p><strong>Anna University</strong> - Chennai, India</p>
-                    <p>JULY 2008 - MAY 2012</p>
-                </div>
             </div>
-            <img class="profile-photo" src="profile-photo.jpg" alt="Profile Photo">
-        </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2>Tech Stack</h2>
+            <p>Java 8, Spring Boot, Rest API, Microservices, Kafka, MQ, Docker, Kubernetes, AWS EKS, Gaia Cloud, Terraform, Oracle DB, MongoDB, PostgreSQL, AWS RDS, JUnit, Jenkin, Jules, BitBucket, GitLab, CI/CD, SonarQube, Splunk, Spinnaker, Dynatrace, JIRA.</p>
+        </section>
+
+        <section class="certifications">
+            <h2>Certification</h2>
+            <p>AWS Cloud Practitioner Certification - Jan 2024</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div>
+                <h3>Bachelor’s in Computer Science & Engineering</h3>
+                <p>Anna University - Chennai, India</p>
+                <p>July 2008 - May 2012</p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
