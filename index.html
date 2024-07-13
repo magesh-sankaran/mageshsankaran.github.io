@@ -6,40 +6,61 @@
     <title>Magesh Sankaran - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e8eaf6;
             color: #333;
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
+            width: 90%;
+            margin: 50px auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 8px;
+        }
+        .left-column {
+            width: 70%;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        .right-column {
+            width: 30%;
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-left: 2px solid #ddd;
         }
         header {
-            text-align: center;
+            text-align: left;
             margin-bottom: 20px;
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
-            color: #444;
+            font-size: 3em;
+            color: #3949ab;
+            font-weight: bold;
         }
         header p {
-            margin: 5px 0;
-            color: #777;
+            margin: 10px 0;
+            color: #666;
+            font-size: 1.1em;
         }
         section {
             margin-bottom: 20px;
         }
         h2 {
-            border-bottom: 2px solid #444;
+            border-bottom: 2px solid #3949ab;
             padding-bottom: 5px;
             margin-bottom: 10px;
-            font-size: 1.5em;
+            font-size: 1.7em;
+            color: #3949ab;
+        }
+        h3 {
+            color: #3949ab;
+            font-size: 1.3em;
         }
         ul {
             list-style: none;
@@ -49,11 +70,17 @@
             padding: 5px 0;
         }
         .contact-info {
-            text-align: center;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1em;
         }
         .contact-info a {
-            color: #0066cc;
+            color: #3949ab;
             text-decoration: none;
+            font-size: 1em;
         }
         .contact-info a:hover {
             text-decoration: underline;
@@ -68,88 +95,117 @@
         .experience p, .education p, .certifications p, .tech-stack p {
             margin: 5px 0;
             color: #555;
+            line-height: 1.5em;
+        }
+        .experience ul li, .education ul li, .certifications ul li, .tech-stack ul li {
+            padding-left: 10px;
+            position: relative;
+        }
+        .experience ul li::before, .education ul li::before, .certifications ul li::before, .tech-stack ul li::before {
+            content: "•";
+            position: absolute;
+            left: -10px;
+            color: #3949ab;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Magesh Sankaran</h1>
-            <p>With over 9 years of experience in software engineering, I bring a strong focus on back-end technologies and cloud solutions, particularly Java and AWS Cloud. My full-stack development expertise allows me to architect and implement robust solutions that drive innovation and efficiency.</p>
+        <div class="left-column">
+            <header>
+                <h1>Magesh Sankaran</h1>
+                <p>With over 9 years of experience in software engineering, I bring a strong focus on back-end technologies and cloud solutions, particularly Java and AWS Cloud. My full-stack development expertise allows me to architect and implement robust solutions that drive innovation and efficiency.</p>
+            </header>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <div>
+                    <h3>Engineering Manager</h3>
+                    <p>Cognizant Technology Solutions - Chicago, US (Jan 2023 - Present)</p>
+                    <p>Client: JP Morgan Chase</p>
+                    <ul>
+                        <li>Led a 6-member team at JP Morgan Chase's commercial banking unit, fostering collaboration and efficiency.</li>
+                        <li>Spearheaded the migration of applications from on-premises infrastructure to AWS Cloud, optimizing performance and scalability.</li>
+                        <li>Implemented cost optimization strategies by right-sizing databases, improving resource allocation.</li>
+                        <li>Strengthened system monitoring tools by implementing effective alerts and creating intuitive dashboards.</li>
+                        <li>Actively participated in continuous learning initiatives to stay ahead of the curve in cloud computing advancements.</li>
+                        <li>Provided technical guidance and support to team members, ensuring project milestones were achieved efficiently.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Senior Associate</h3>
+                    <p>Cognizant Technology Solutions - Chennai, India  (Mar 2019 - Dec 2022)</p>
+                    <p>Client: Bank Of New York Mellon Corp</p>
+                    <ul>
+                        <li>Member of an 8-person development team in the BNYMellon Asset Management Domain, contributing expertise and collaboration.</li>
+                        <li>Implemented a new feature that went live with minimal bugs, showcasing meticulous attention to detail.</li>
+                        <li>Automated certificate deployment using an in-house tool, streamlining processes and ensuring reliability.</li>
+                        <li>Played a key role in transitioning the application build tool from Jenkins to Gitlab CI/CD.</li>
+                        <li>Collaborated closely with cross-functional teams to ensure smooth integration and functionality throughout the transition period.</li>
+                        <li>Actively participated in team discussions and decision-making processes, fostering continuous improvement and innovation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Consultant</h3>
+                    <p>Intellect Design Arena Limited - Chennai, India (Jul 2016 - Feb 2019)</p>
+                    <ul>
+                        <li>Understand business needs, recommend solutions, and design secure cloud applications.</li>
+                        <li>Develop microservices using Spring Boot, Spring Framework, Java, RESTful APIs, and Kafka.</li>
+                        <li>Write test cases, perform unit, functional, system, and integration testing, and ensure high-quality code.</li>
+                        <li>Utilize DevOps tools for code management, build automation, code quality analysis, and vulnerability scanning. Automate tasks for efficiency.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Software Engineer</h3>
+                    <p>eG Innovations Pvt Ltd - Chennai, India (Nov 2014 - Jul 2016)</p>
+                    <ul>
+                        <li>Develop applications using java technologies and deploy them to prod environments.</li>
+                        <li>Analyze business needs for change requests and enhancements, Identify and analyze potential roadblocks and challenges.</li>
+                        <li>Create system design specifications and analyze business impacts.</li>
+                        <li>Define the system using flowcharts and UML diagrams.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
             <div class="contact-info">
                 <p>Chicago, Illinois - 60631</p>
                 <p>(773) 414-0464</p>
                 <p><a href="mailto:mageshsankaran128@gmail.com">mageshsankaran128@gmail.com</a></p>
-                <p><a href="https://www.linkedin.com/in/magesh-sankaran" target="_blank">LinkedIn</a></p>
-            </div>
-        </header>
+                <p><a href="https://www.linkedin.com/in/magesh-sankaran" target="_blank">www.linkedin.com/in/mageshsankaran</a></p>
+                <p><a href="https://github.com/magesh-sankaran" target="_blank">https://github.com/magesh-sankaran</a></p>
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <div>
-                <h3>Engineering Manager</h3>
-                <p>Cognizant Technology Solutions (Mar 2019 - Present)</p>
-                <p>JP Morgan Chase - Chicago, IL</p>
-                <ul>
-                    <li>Led a 6-member team at JP Morgan Chase's commercial banking unit, fostering collaboration and efficiency.</li>
-                    <li>Spearheaded the migration of applications from on-premises infrastructure to AWS Cloud, optimizing performance and scalability.</li>
-                    <li>Implemented cost optimization strategies by right-sizing databases, improving resource allocation.</li>
-                    <li>Strengthened system monitoring tools by implementing effective alerts and creating intuitive dashboards.</li>
-                    <li>Actively participated in continuous learning initiatives to stay ahead of the curve in cloud computing advancements.</li>
-                    <li>Provided technical guidance and support to team members, ensuring project milestones were achieved efficiently.</li>
-                </ul>
             </div>
-            <div>
-                <h3>Bank Of New York Mellon Corp</h3>
-                <p>Member of an 8-person development team in the BNYMellon Asset Management Domain, contributing expertise and collaboration.</p>
-                <ul>
-                    <li>Implemented a new feature that went live with minimal bugs, showcasing meticulous attention to detail.</li>
-                    <li>Automated certificate deployment using an in-house tool, streamlining processes and ensuring reliability.</li>
-                    <li>Played a key role in transitioning the application build tool from Jenkins to Gitlab CI/CD.</li>
-                    <li>Collaborated closely with cross-functional teams to ensure smooth integration and functionality throughout the transition period.</li>
-                    <li>Actively participated in team discussions and decision-making processes, fostering continuous improvement and innovation.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Consultant</h3>
-                <p>Intellect Design Arena Limited - Chennai, India (Jul 2016 - Feb 2019)</p>
-                <ul>
-                    <li>Understand business needs, recommend solutions, and design secure cloud applications.</li>
-                    <li>Develop microservices using Spring Boot, Spring Framework, Java, RESTful APIs, and Kafka.</li>
-                    <li>Write test cases, perform unit, functional, system, and integration testing, and ensure high-quality code.</li>
-                    <li>Utilize DevOps tools for code management, build automation, code quality analysis, and vulnerability scanning. Automate tasks for efficiency.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Software Engineer</h3>
-                <p>eG Innovations Pvt Ltd - Chennai, India (Nov 2014 - Jul 2016)</p>
-                <ul>
-                    <li>Develop applications using java technologies and deploy them to prod environments.</li>
-                    <li>Analyze business needs for change requests and enhancements, Identify and analyze potential roadblocks and challenges.</li>
-                    <li>Create system design specifications and analyze business impacts.</li>
-                    <li>Define the system using flowcharts and UML diagrams.</li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="tech-stack">
-            <h2>Tech Stack</h2>
-            <p>Java 8, Spring Boot, Rest API, Microservices, Kafka, MQ, Docker, Kubernetes, AWS EKS, Gaia Cloud, Terraform, Oracle DB, MongoDB, PostgreSQL, AWS RDS, JUnit, Jenkin, Jules, BitBucket, GitLab, CI/CD, SonarQube, Splunk, Spinnaker, Dynatrace, JIRA.</p>
-        </section>
+            <section class="tech-stack">
+                <h2>Tech Stack</h2>
+                <p>Java 8, Spring Boot, Rest API, Microservices, Kafka, MQ, Docker, Kubernetes, AWS EKS, Gaia Cloud, Terraform, Oracle DB, MongoDB, PostgreSQL, AWS RDS, JUnit, Jenkin, Jules, BitBucket, GitLab, CI/CD, SonarQube, Splunk, Spinnaker, Dynatrace, JIRA.</p>
+            </section>
 
-        <section class="certifications">
-            <h2>Certification</h2>
-            <p>AWS Cloud Practitioner Certification - Jan 2024</p>
-        </section>
+            <section class="certifications">
+                <h2>Certification</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="aws-certified-cloud-practitioner.png" alt="AWS Cloud Practitioner Badge">
+                        </td>
+                        <td>
+                            <p>AWS Cloud Practitioner Certification<br> - Jan 2024</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
 
-        <section class="education">
-            <h2>Education</h2>
-            <div>
-                <h3>Bachelor’s in Computer Science & Engineering</h3>
-                <p>Anna University - Chennai, India</p>
-                <p>July 2008 - May 2012</p>
-            </div>
-        </section>
+            <section class="education">
+                <h2>Education</h2>
+                <div>
+                    <h3>Bachelor’s in Computer Science & Engineering</h3>
+                    <p>Anna University - Chennai, India</p>
+                    <p>July 2008 - May 2012</p>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>
